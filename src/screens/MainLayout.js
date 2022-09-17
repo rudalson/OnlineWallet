@@ -2,7 +2,6 @@ import React from 'react';
 import {Animated, View} from 'react-native';
 import {connect} from 'react-redux';
 
-import {setTradeModalVisibility} from '../stores/tab/tabActions';
 import {IconTextButton} from '../components';
 import {COLORS, SIZES, icons} from '../constants';
 
@@ -82,11 +81,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    setTradeModalVisibility: isVisible => {
-      return dispatch(setTradeModalVisibility(isVisible));
-    },
-  };
+  return {};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(MainLayout);
