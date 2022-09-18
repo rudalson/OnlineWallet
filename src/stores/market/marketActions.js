@@ -49,8 +49,8 @@ export function getHoldings(
     })
       .then(response => {
         console.log('GetHolding');
-        console.log(response);
-        if (response.state === 200) {
+        // console.log(response);
+        if (response.status === 200) {
           // Message data
           let myHoldings = response.data.map(item => {
             // Retrieve our current holdings -> current quantity
@@ -128,8 +128,8 @@ export function getCoinMarket(
     })
       .then(response => {
         console.log('getCoinMarket');
-        console.log(response);
-        if (response.state === 200) {
+        // console.log(response);
+        if (response.status === 200) {
           dispatch(getCoinMarketSuccess(response.data));
         } else {
           dispatch(getCoinMarketFailure(response.data));
