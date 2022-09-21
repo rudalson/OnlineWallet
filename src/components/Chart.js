@@ -11,7 +11,6 @@ import {
 import moment from 'moment';
 
 import {COLORS, FONTS, SIZES} from '../constants';
-import {max} from 'react-native-reanimated';
 
 const Chart = ({containerStyle, chartPrices}) => {
   // Point

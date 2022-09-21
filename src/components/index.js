@@ -1,6 +1,8 @@
 import BalanceInfo from './BalanceInfo';
 import Chart from './Chart';
+import HeaderBar from './HeaderBar';
 import IconTextButton from './IconTextButton';
 import TabIcon from './TabIcon';
+import TextButton from './TextButton';
 
-export {BalanceInfo, Chart, IconTextButton, TabIcon};
+export {BalanceInfo, Chart, HeaderBar, IconTextButton, TabIcon, TextButton};
